@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Low-fidelity Wireframe</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      header, footer {
+        background-color: gray;
+        height: 50px;
+      }
+      .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 20px;
+      }
+      .content {
+        width: 48%;
+        height: 500px;
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+      }
+      .content-left {
+        background-color: #F5F5F5;
+      }
+      .content-right-top {
+        background-color: #E5E5E5;
+        height: 300px;
+      }
+      .content-right-bottom {
+        background-color: #fff;
+        padding: 20px;
+      }
+      h2 {
+        margin-bottom: 10px;
+      }
+      p {
+        font-size: 14px;
+        line-height: 1.5;
+      }
+      @media (max-width: 768px) {
+        .content {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header></header>
+    <div class="container">
+      <div class="content content-left"></div>
+      <div class="content content-right-top"></div>
+      <div class="content content-right-bottom">
+        <h2>Header Text</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam faucibus dolor euismod eros suscipit, nec fermentum dolor pharetra. Proin vel urna risus. Duis faucibus libero et lectus malesuada consectetur. Nunc vel massa sit amet risus euismod rutrum sed ut odio.</p>
+      </div>
+    </div>
+    <footer></footer>
+  </body>
+</html>
